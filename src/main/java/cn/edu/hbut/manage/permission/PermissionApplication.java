@@ -3,6 +3,7 @@ package cn.edu.hbut.manage.permission;
 import org.springframework.boot.SpringApplication;
 import org.springframework.boot.autoconfigure.SpringBootApplication;
 
+
 @SpringBootApplication
 public class PermissionApplication {
 
