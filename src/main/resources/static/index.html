@@ -3,7 +3,8 @@
 
 <head>
     <meta charset="UTF-8">
-    <title>jquery</title>
+
+    <title>jquery + semantic ui</title>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
         integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
@@ -18,13 +19,15 @@
         crossorigin="anonymous" referrerpolicy="no-referrer" />
 
     <script src="index.js"></script>
+    <link rel="stylesheet" href="index.css" />
 
 </head>
 
 <body>
-    <div class="ui">
 
-        <div class="ui card" style="margin: 10px;">
+    <div style="margin-top: 10px;">
+
+        <div class="ui card">
 
             <div class="content">
                 <div class="ui left icon fluid input">
@@ -38,36 +41,37 @@
                 <input id="btnCheck" type="button" class="ui primary fluid button" value="CHECK" />
             </div>
 
+            <div id="message" class="extra content"></div>
+
         </div>
 
-        <div id="message"></div>
-
-        <div class="ui relaxed divided list">
+        <div id="listPermissions" class="ui card relaxed divided list">
         </div>
-    </div>
 
-    <div>
-        <form id="formUser" class="ui form card" style="margin: 10px; padding: 10px">
-            <div class="field">
-                <div class="ui left icon fluid input">
-                    <input id="txtFormId" type="text" placeholder="Input user id...">
-                    <i class="user icon"></i>
+        <div class="ui card">
+            <form id="formUser" class="ui form">
+                <div class="field">
+                    <div class="ui left icon fluid input">
+                        <input id="txtFormId" type="text">
+                        <i class="user icon"></i>
+                    </div>
                 </div>
+                <button id="btnFormCheck" class="ui primary fluid submit button" type="submit">CHECK</button>
+                <div class="ui error message"></div>
+            </form>
+        </div>
+
+        <div id="listFormPermissions" class="ui card relaxed divided list">
+        </div>
+
+        <div id="templatePermission" class="item">
+            <i class="large middle aligned icon"></i>
+            <div class="content">
+                <a class="header"></a>
+                <div class="description"></div>
             </div>
-            <button id="btnFormCheck" class="ui primary fluid button" type="submit">CHECK</button>
-        </form>
-
-        <div class="ui relaxed divided list">
         </div>
 
-    </div>
-
-    <div id="templatePermission" class="item">
-        <i class="large middle aligned icon"></i>
-        <div class="content">
-            <a class="header"></a>
-            <div class="description"></div>
-        </div>
     </div>
 
 </body>
