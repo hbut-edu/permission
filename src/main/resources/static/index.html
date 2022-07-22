@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>jquery</title>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"
+        integrity="sha512-894YE6QWD5I59HgZOGReFYm4dnWc1Qt5NtvYSaNcOP+u1T9qYdvdihz0PPSiiqn/+/3e7Jo4EaG7TubfWGUrMQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.js"
+        integrity="sha512-dqw6X88iGgZlTsONxZK9ePmJEFrmHwpuMrsUChjAw1mRUhUITE5QU9pkcSox+ynfLhL15Sv2al5A0LVyDCmtUw=="
+        crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/semantic-ui/2.4.1/semantic.min.css"
+        integrity="sha512-8bHTC73gkZ7rZ7vpqUQThUDhqcNFyYi2xgDgPDHc+GXVGHXq+xPjynxIopALmOPqzo9JZj0k6OqqewdGO3EsrQ=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+
+    <script src="index.js"></script>
+
+</head>
+
+<body>
+    <div class="ui">
+
+        <div class="ui card" style="margin: 10px;">
+
+            <div class="content">
+                <div class="ui left icon fluid input">
+                    <input id="txtId" type="text" placeholder="Input user id...">
+                    <i class="user icon"></i>
+                </div>
+
+            </div>
+
+            <div class="extra content">
+                <input id="btnCheck" type="button" class="ui primary fluid button" value="CHECK" />
+            </div>
+
+        </div>
+
+        <div id="message"></div>
+
+        <div class="ui relaxed divided list">
+        </div>
+    </div>
+
+    <div>
+        <form id="formUser" class="ui form card" style="margin: 10px; padding: 10px">
+            <div class="field">
+                <div class="ui left icon fluid input">
+                    <input id="txtFormId" type="text" placeholder="Input user id...">
+                    <i class="user icon"></i>
+                </div>
+            </div>
+            <button id="btnFormCheck" class="ui primary fluid button" type="submit">CHECK</button>
+        </form>
+
+        <div class="ui relaxed divided list">
+        </div>
+
+    </div>
+
+    <div id="templatePermission" class="item">
+        <i class="large middle aligned icon"></i>
+        <div class="content">
+            <a class="header"></a>
+            <div class="description"></div>
+        </div>
+    </div>
+
+</body>
+
+</html>
