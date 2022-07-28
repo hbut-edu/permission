@@ -16,7 +16,7 @@ public class User {
 
     @Getter @Setter private String name;
 
-    @OneToMany(mappedBy = "user")
+    @OneToMany(mappedBy = "user", fetch = FetchType.EAGER)
     @Getter @Setter private List<Permission> permissions;
 
 }
